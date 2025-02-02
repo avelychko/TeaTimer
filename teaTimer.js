@@ -63,7 +63,7 @@ class TeaTimer {
         backArrow.src = "arrow.png"; 
         backArrow.alt = "Back";
         backArrow.classList.add("back-arrow");
-        backArrow.addEventListener("click", () => this.displayTeas()); // Go back to the tea list
+        backArrow.addEventListener("click", () => location.reload()); // Reload the page when clicked
 
         // Create the text element for the tea name
         const teaName = document.createElement("h2");
@@ -131,3 +131,7 @@ class TeaTimer {
             teaItem.appendChild(cancelButton);
     }
 }
+
+// Initialize the TeaTimer class and display the teas when the page loads
+const teaTimer = new TeaTimer();
+teaTimer.displayTeas();
