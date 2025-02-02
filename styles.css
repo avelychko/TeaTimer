@@ -1,0 +1,102 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background-color: #b0d4b1;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 10px;
+    background-color: #97b898;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2em;
+    color: #F1E1A6;
+}
+
+.tea-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.tea-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.tea-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 1em;
+    color: #362717;
+}
+
+.tea-item-column {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for the back arrow */
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 10px; 
+    cursor: pointer;
+    width: 50px; 
+    height: 50px;
+    color: #F1E1A6;
+}
+
+/* Styling for the timer */
+.tea-item-column p {
+    font-size: 3em;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #362717;
+}
+
+.blinking {
+    animation: blink 1s step-start 0s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Style the buttons */
+button {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #F1E1A6; 
+    color: #362717;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #D1C18A; /* Darker on hover */
+}
+
+button:active {
+    background-color: #B3A16E; /* Even darker when clicked */
+}
